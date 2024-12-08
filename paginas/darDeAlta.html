@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icona.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/darDeAlta.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <title>ITBFLIX | DARSE DE ALTA</title>
+</head>
+<body>
+    <header>
+        <h1><span class="h1_span">ITB</span>FLIX</h1>
+        <nav>
+            <ul>
+                <li><a href="../index_ITBFLIX.html">Inicio</a></li>
+                <li><a href="./peliculas_list.html">Películas</a></li>
+                <li><a href="../index_ITBFLIX.html#series">Series</a></li>
+                <li><a href="../index_ITBFLIX.html#lo_mas_visto">Lo mas visto</a></li>
+                <li><a href="#">Darse de Alta</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="container">
+        <h2>Formulario de Registro</h2>
+        <form action="/registrar" method="GET">
+            <!-- Nombre de usuario -->
+            <label for="usuario">Nombre de usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre de usuario" required><br><br>
+            
+            <!-- Contraseña -->
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required><br><br>
+            
+            <!-- Correo electrónico -->
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required><br><br>
+            
+            <!-- Género -->
+            <label for="genero">Género:</label><br>
+            <select id="genero" name="genero" required>
+                <option value="" disabled selected>Selecciona tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+            
+            <!-- Fecha de nacimiento -->
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+            
+            <!-- Intereses o pasatiempos -->
+            <label for="intereses">Tus intereses o pasatiempos:</label><br>
+            <textarea id="intereses" name="intereses" rows="4" cols="50" placeholder="Cuéntanos sobre tus intereses..."></textarea><br><br>
+            
+            <!-- Aceptación de términos -->
+            <label>
+                <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+            </label><br><br>
+            
+            <!-- Botón de envío -->
+            <button type="submit">Registrarse</button>
+        </form>
+    </article>
+    <footer>
+        <section class="footer_redes_sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </section>
+        <section class="footer_p">
+            <p class="p_footer"><span class="h1_span_footer">ITB</span>FLIX</p>
+        </section>
+        <section class="direccion">
+            <p>Carrer d'Aiguablava 121 08033 Barcelona</p>
+            <p>Copyright</p>
+        </section>
+        
+    </footer>
+</body>
+</html>
